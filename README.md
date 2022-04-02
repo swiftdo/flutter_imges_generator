@@ -12,7 +12,13 @@ assets 目录中包含 1x，2x, 3x 的图片，已经帮你做好 flutter 标准
 
 ## 使用
 
-直接将你要生成的图片单独放一个目录（3倍图），然后将 `resize.py` 也放入到里面。
+拉取项目：
+
+```py
+git clone https://github.com/swiftdo/flutter_imges_generator.git
+```
+
+**直接将你要生成的图片放入到该项目里面。**
 
 然后执行：
 
@@ -22,6 +28,7 @@ $ source .venv/bin/activate
 $ pip install -r requirements.txt
 $ python resize.py
 ```
+
 
 执行完成后，会生成如下目录：
 
@@ -44,4 +51,4 @@ $ tree .
 └── resize.py
 ```
 
-assets 目录就是你要的文件。当然为了更小的资源，可以用工具 [ImageOptim](https://imageoptim.com/mac) 批量压缩
+**assets** 目录就是你要的文件。当然为了更小的资源，可以用工具 [ImageOptim](https://imageoptim.com/mac) 批量压缩
