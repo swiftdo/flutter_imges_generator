@@ -6,9 +6,11 @@
 Do not repeat yourself!
 ```
 
-本工具直接将 3x 图生成到 assets 目录中，
+本工具直接将 3x 图生成到 assets 目录中。
 
 assets 目录中包含 1x，2x, 3x 的图片，已帮你做好按 flutter 标准目录归类。
+
+支持3倍图命名`@3x.png、.png`
 
 ## 使用
 
@@ -37,16 +39,16 @@ $ tree .
 .
 ├── README.md
 ├── add_success.png
-├── address_check_def.png
 ├── assets
-│   ├── 2x
-│   │   ├── add_success.png
-│   │   └── address_check_def.png
-│   ├── 3x
-│   │   ├── add_success.png
-│   │   └── address_check_def.png
-│   ├── add_success.png
-│   └── address_check_def.png
+│   ├── 2x
+│   │   ├── add_success.png
+│   │   └── limit.png
+│   ├── 3x
+│   │   ├── add_success.png
+│   │   └── limit.png
+│   ├── add_success.png
+│   └── limit.png
+├── limit@3x.png
 ├── requirements.txt
 └── resize.py
 ```

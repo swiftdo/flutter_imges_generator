@@ -27,6 +27,9 @@ def main():
 
     for image in images:
         print(image)
+        image_name = image
+        if '@3x' in image:
+            image_name = image.replace("@3x", "")
         # 打开3倍图
         im = Image.open(image)
         (w,h) = im.size
@@ -34,17 +37,17 @@ def main():
         # 生成三倍图
         size = (w,h)
         im.thumbnail(size)
-        im.save(path_3x + '/' + image, 'png')
+        im.save(path_3x + '/' + image_name, 'png')
 
         # 生成二倍图
         size = (w/3*2,h/3*2)
         im.thumbnail(size)
-        im.save(path_2x + '/' + image, 'png')
+        im.save(path_2x + '/' + image_name, 'png')
 
         # 生成一倍图
         size = (w/3,h/3)
         im.thumbnail(size)
-        im.save(path_1x + '/' + image, 'png')
+        im.save(path_1x + '/' + image_name, 'png')
         im.close
 
 if __name__ == '__main__':
