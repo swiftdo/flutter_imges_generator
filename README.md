@@ -52,3 +52,7 @@ $ tree .
 ```
 
 **assets** 目录就是你要的文件。当然为了获得更小的资源，可以用工具 [ImageOptim](https://imageoptim.com/mac) 批量压缩。
+
+## 关于
+
+个人博客站点：[oldbird.run](https://oldbird.run)
