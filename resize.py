@@ -42,7 +42,6 @@ def main():
         im.save(path_2x + '/' + image, 'png')
 
         # 生成一倍图
-#        os.remove("./" + image)
         size = (w/3,h/3)
         im.thumbnail(size)
         im.save(path_1x + '/' + image, 'png')
@@ -51,6 +50,3 @@ def main():
 if __name__ == '__main__':
     main()
     print("done")
-    # 上面只定义函数，可共享于其他文件
-    # from module2 import foo 或者 import module3 或者 import module3 as m3
-    # 下面代码只在本文件夹可执行
