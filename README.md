@@ -8,7 +8,7 @@ Do not repeat yourself!
 
 本工具直接将 3x 图生成到 assets 目录中，
 
-assets 目录中包含 1x，2x, 3x 的图片，已经帮你做好 flutter 标准目录归类。
+assets 目录中包含 1x，2x, 3x 的图片，已帮你做好按 flutter 标准目录归类。
 
 ## 使用
 
